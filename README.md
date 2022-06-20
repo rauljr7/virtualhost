@@ -22,11 +22,13 @@ $ sudo cp /path/to/virtualhost.sh /usr/local/bin/virtualhost
 ### For Global Shortcut ###
 
 ```bash
-$ cd /usr/local/bin
-$ wget -O virtualhost https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost.sh
-$ chmod +x virtualhost
-$ wget -O virtualhost-nginx https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost-nginx.sh
-$ chmod +x virtualhost-nginx
+cd /usr/local/bin
+```
+```bash
+wget -O virtualhost-do https://raw.githubusercontent.com/rauljr7/virtualhost/master/virtualhost-do.sh
+```
+```bash
+chmod +x virtualhost-do
 ```
 
 ## Usage ##
