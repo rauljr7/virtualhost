@@ -7,7 +7,7 @@ action=$1
 domain=$2
 rootDir=$3
 ##hostname variable below will only work in digital ocean server
-hostname=$(curl -s http://169.254.169.254/metadata/v1/hostname)
+hostname=$(curl -s http://169.254.169.254/metadata/v1/interfaces/public/0/ipv4/address)
 owner=$(who am i | awk '{print $1}')
 apacheUser=$(ps -ef | egrep '(httpd|apache2|apache)' | grep -v root | head -n1 | awk '{print $1}')
 email='webmaster@localhost'
